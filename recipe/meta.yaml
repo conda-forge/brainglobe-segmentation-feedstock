@@ -26,17 +26,21 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
   run:
+    - bg-atlasapi
     - brainglobe-napari-io >=0.3.0
-    - dask-core >=2.15.0
-    - imio
     - brainglobe-utils >=0.2.7
-    - napari-plugin-engine >=0.1.4
+    # - dask-core >=2.15.0
+    - imio
+    # - napari-plugin-engine >=0.1.4
     - napari >=0.4.5
     - numpy
     - pandas
-    - pytables
+    # - pytables
     - python >=3.9
+    - qtpy
     - scikit-image
+    - scipy
+    - tifffile
 
 test:
   imports:
