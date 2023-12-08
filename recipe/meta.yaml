@@ -1,5 +1,5 @@
 {% set name = "brainglobe-segmentation" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-segmentation-{{ version }}.tar.gz
-  sha256: 89533b7d8b160cae0d28a84384ab01e236c04f4f769db406c51faa6ea799a140
+  sha256: 8adeb22cdf2a193b69b7797774463e5116c20f211a560b8a88c7199581a8ea43
 
 build:
   entry_points:
@@ -26,17 +26,18 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
   run:
+    - bg-atlasapi
     - brainglobe-napari-io >=0.3.0
-    - dask-core >=2.15.0
-    - imio
     - brainglobe-utils >=0.2.7
-    - napari-plugin-engine >=0.1.4
+    - imio
     - napari >=0.4.5
     - numpy
     - pandas
-    - pytables
     - python >=3.9
+    - qtpy
     - scikit-image
+    - scipy
+    - tifffile
 
 test:
   imports:
