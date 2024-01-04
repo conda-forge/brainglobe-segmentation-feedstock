@@ -1,5 +1,5 @@
 {% set name = "brainglobe-segmentation" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-segmentation-{{ version }}.tar.gz
-  sha256: 8adeb22cdf2a193b69b7797774463e5116c20f211a560b8a88c7199581a8ea43
+  sha256: 03c0e74487d9412ac182fdeef1b3902258b145658959c20f0129f95987a58ab7
 
 build:
   entry_points:
