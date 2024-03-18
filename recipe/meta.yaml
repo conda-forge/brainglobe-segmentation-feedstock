@@ -26,7 +26,7 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
   run:
-    - bg-atlasapi
+    - brainglobe-atlasapi >=2.0.1
     - brainglobe-napari-io >=0.3.0
     - brainglobe-utils >=0.2.7
     - imio
