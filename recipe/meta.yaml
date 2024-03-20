@@ -1,5 +1,5 @@
 {% set name = "brainglobe-segmentation" %}
-{% set version = "1.2.2" %}
+{% set version = "1.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/brainglobe-segmentation-{{ version }}.tar.gz
-  sha256: 454d896623d55b1ba546e5042babd78841816fb411f15dac7a499ebb0cd7186e
+  sha256: 1fb5ec51f68d73ab71125fa833d34008cc68b2572dcddf740ce0d4664ab0a1e0
 
 build:
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - setuptools-scm >=6.2
     - wheel
   run:
-    - bg-atlasapi
+    - brainglobe-atlasapi >=2.0.4
     - brainglobe-napari-io >=0.3.0
     - brainglobe-utils >=0.2.7
     - imio
