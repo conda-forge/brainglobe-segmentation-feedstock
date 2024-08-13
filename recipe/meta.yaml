@@ -1,5 +1,5 @@
 {% set name = "brainglobe-segmentation" %}
-{% set version = "1.2.4" %}
+{% set version = "1.2.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 7cda37495d04ec7eeaac22dc5dbe48147b4e7c9ea4bf723267f320cc9bf757d4
+  sha256: 124cd091cc378d8d4645b533f96ea8a7f8b54640249f84e8720a8aa360c6ce4e
 
 build:
   entry_points:
@@ -29,9 +29,8 @@ requirements:
     - brainglobe-atlasapi >=2.0.4
     - brainglobe-napari-io >=0.3.0
     - brainglobe-utils >=0.2.7
-    - imio
     - napari >=0.4.5
-    - numpy
+    - numpy <2.0.0
     - pandas
     - python >=3.9
     - qtpy
@@ -60,6 +59,4 @@ about:
 extra:
   recipe-maintainers:
     - adamltyson
-    - goanpeca
-    - jaimergp
-    - willGraham01
+    - alessandrofelder
