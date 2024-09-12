@@ -14,14 +14,14 @@ build:
     - brainglobe-segmentation = brainglobe_segmentation.segment:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   script_env:
     - QT_QPA_PLATFORM=offscreen
 
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python >=3.10
     - setuptools >=45
     - setuptools-scm >=6.2
     - wheel
@@ -30,9 +30,9 @@ requirements:
     - brainglobe-napari-io >=0.3.0
     - brainglobe-utils >=0.2.7
     - napari >=0.4.5
-    - numpy <2.0.0
+    - numpy
     - pandas
-    - python >=3.9
+    - python >=3.10
     - qtpy
     - scikit-image
     - scipy
@@ -44,7 +44,6 @@ test:
   commands:
     - pip list
     - pip check
-    # - brainglobe-segmentation --help  # This is opening the napari GUI and not closing
   requires:
     - pip
     - pyqt
