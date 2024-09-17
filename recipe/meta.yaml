@@ -28,7 +28,7 @@ requirements:
   run:
     - brainglobe-atlasapi >=2.0.4
     - brainglobe-napari-io >=0.3.0
-    - brainglobe-utils >=0.2.7
+    - brainglobe-utils >=0.6.0
     - napari >=0.4.5
     - numpy
     - pandas
