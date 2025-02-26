@@ -38,6 +38,7 @@ requirements:
     - scikit-image
     - scipy
     - tifffile
+    - qt-niu
 
 test:
   imports:
