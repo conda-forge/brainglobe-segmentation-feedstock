@@ -1,4 +1,4 @@
-{% set python_min = "3.10" %}
+{% set python_min = "3.11" %}
 {% set name = "brainglobe-segmentation" %}
 {% set version = "1.3.1" %}
 
@@ -38,6 +38,7 @@ requirements:
     - scikit-image
     - scipy
     - tifffile
+    - qt-niu
 
 test:
   imports:
